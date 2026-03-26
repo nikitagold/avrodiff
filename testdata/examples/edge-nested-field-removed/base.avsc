@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {
+      "name": "shipping",
+      "type": {
+        "type": "record",
+        "name": "Address",
+        "fields": [
+          {"name": "city",    "type": "string"},
+          {"name": "street",  "type": "string"},
+          {"name": "country", "type": "string"}
+        ]
+      }
+    }
+  ]
+}

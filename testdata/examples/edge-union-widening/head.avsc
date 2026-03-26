@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "Event",
+  "fields": [
+    {"name": "id",      "type": "string"},
+    {"name": "payload", "type": ["null", "string"], "default": null}
+  ]
+}

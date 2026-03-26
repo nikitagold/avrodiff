@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "User",
+  "fields": [
+    {"name": "id",    "type": "string", "doc": "unique user id (UUID)"},
+    {"name": "email", "type": "string", "doc": "primary email address"}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "User",
+  "fields": [
+    {"name": "userId", "type": "string", "aliases": ["user_id"]},
+    {"name": "email",  "type": "string"}
+  ]
+}

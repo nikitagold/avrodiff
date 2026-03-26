@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    {"name": "id",     "type": "string"},
+    {"name": "status", "type": {"type": "enum", "name": "Status", "symbols": ["ACTIVE", "CLOSED"]}}
+  ]
+}
