@@ -52,9 +52,10 @@ avrodiff --base <base.avsc> --head <head.avsc> [--format text|json] [--mode BACK
 | Code | Meaning |
 |---|---|
 | `0` | No changes (`NONE`) |
-| `1` | Breaking changes (`MAJOR`) |
-| `2` | Safe additions only (`MINOR`) |
-| `3` | Cosmetic changes only (`PATCH`) |
+| `1` | Tool error (bad flags, file not found, etc.) |
+| `2` | Breaking changes (`MAJOR`) |
+| `3` | Safe additions only (`MINOR`) |
+| `4` | Cosmetic changes only (`PATCH`) |
 
 ## Output levels
 
@@ -268,5 +269,3 @@ Over-bumping is allowed (e.g. bumping major for a minor change is conservative b
       --format json \
       --mode FULL
 ```
-
-Exit code `1` blocks the pipeline on breaking changes. Exit code `0` or `2`/`3` allows merge.

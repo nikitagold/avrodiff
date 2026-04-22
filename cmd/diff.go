@@ -60,11 +60,11 @@ func Execute() error {
 
 	switch result.Level {
 	case model.LevelMajor:
-		os.Exit(1)
-	case model.LevelMinor:
 		os.Exit(2)
-	case model.LevelPatch:
+	case model.LevelMinor:
 		os.Exit(3)
+	case model.LevelPatch:
+		os.Exit(4)
 	}
 	return nil
 }
